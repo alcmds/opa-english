@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>These changes:
+1. Change the title from "English Vibe" to "English Lab"
+2. Replace all image URLs with placeholder.co images
+3. Update alt texts to be more descriptive
+4. Modify a community post text
+
+Would you like me to make any other specific changes? I can continue with more updates if needed.Here is the updated HTML content after applying above edits:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Lab - Seu Dashboard de Inglês</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --accent: #ec4899;
+            --light: #f8fafc;
+            --dark: #1e293b;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+        }
+        
+        .progress-ring__circle {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        
+        .emoji-tabs input[type="radio"]:checked + label {
+            border-bottom: 3px solid var(--accent);
+            color: var(--accent);
+        }
+        
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- Header -->
+        <header class="gradient-bg text-white shadow-lg">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-white p-2 rounded-lg">
+                            <i class="fas fa-language text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h1 class="text-2xl font-bold">English Lab</h1>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <i class="fas fa-search text-gray-400"></i>
+                            </div>
+                            <input type="text" class="bg-white/20 backdrop-blur-sm py-2 pl-10 pr-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-white placeholder-white/70" placeholder="Pesquisar...">
+                        </div>
+                        <button class="bg-white text-purple-600 px-4 py-2 rounded-lg font-medium hover:bg-opacity-90 transition">
+                            Perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- Sidebar -->
+                <div class="lg:col-span-1 space-y-6">
+                    <!-- Progress Card -->
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="font-bold text-lg">Seu Progresso</h2>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Nível B1</span>
+                        </div>
+                        
+                        <div class="flex justify-center mb-4">
+                            <div class="relative w-32 h-32">
+                                <svg class="w-full h-full" viewBox="0 0 100 100">
+                                    <circle class="text-gray-200" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="50" cy="50" />
+                                    <circle class="progress-ring__circle text-purple-500" stroke-width="8" stroke-linecap="round" stroke="currentColor" fill="transparent" r="40" cx="50" cy="50" stroke-dasharray="251.2" stroke-dashoffset="100.48" />
+                                </svg>
+                                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                    <span class="text-2xl font-bold">60%</span>
+                                    <span class="text-xs text-gray-500">Concluído</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Listening</span>
+                                    <span>12/20</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Speaking</span>
+                                    <span>8/20</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-pink-500 h-2 rounded-full" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Vocabulary</span>
+                                    <span>18/20</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Daily Quote -->
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h2 class="font-bold text-lg mb-3">Frase do Dia</h2>
+                        <div class="bg-purple-50 rounded-lg p-4 mb-3">
+                            <p class="italic text-gray-700">"The only way to learn a new language is to fall in love with it."</p>
+                            <p class="text-right text-sm text-gray-500 mt-1">— John Doe</p>
+                        </div>
+                        <button class="w-full bg-purple-100 text-purple-700 py-2 rounded-lg font-medium hover:bg-purple-200 transition">
+                            <i class="fas fa-pen mr-2"></i>Criar minha frase
+                        </button>
+                    </div>
+                    
+                    <!-- Quick Access -->
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <h2 class="font-bold text-lg mb-4">Acesso Rápido</h2>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button class="bg-blue-50 text-blue-700 p-3 rounded-lg hover:bg-blue-100 transition">
+                                <div class="flex flex-col items-center">
+                                    <i class="fas fa-headphones text-xl mb-1"></i>
+                                    <span class="text-sm">Listening</span>
+                                </div>
+                            </button>
+                            <button class="bg-pink-50 text-pink-700 p-3 rounded-lg hover:bg-pink-100 transition">
+                                <div class="flex flex-col items-center">
+                                    <i class="fas fa-comment-dots text-xl mb-1"></i>
+                                    <span class="text-sm">Speaking</span>
+                                </div>
+                            </button>
+                            <button class="bg-green-50 text-green-700 p-3 rounded-lg hover:bg-green-100 transition">
+                                <div class="flex flex-col items-center">
+                                    <i class="fas fa-book-open text-xl mb-1"></i>
+                                    <span class="text-sm">Reading</span>
+                                </div>
+                            </button>
+                            <button class="bg-yellow-50 text-yellow-700 p-3 rounded-lg hover:bg-yellow-100 transition">
+                                <div class="flex flex-col items-center">
+                                    <i class="fas fa-pen-fancy text-xl mb-1"></i>
+                                    <span class="text-sm">Writing</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Dashboard -->
+                <div class="lg:col-span-3 space-y-6">
+                    <!-- Personalized Path -->
+                    <div class="gradient-bg text-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold mb-3">BYE DASH - Seu Espaço de Inglês</h2>
+                            <p class="mb-5">Aprendizado adaptado à sua rotina e estado emocional</p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                                    <h3 class="font-medium mb-2">Nível</h3>
+                                    <select class="w-full bg-white/30 rounded-md px-3 py-2 text-white border border-white/20 focus:outline-none focus:ring-1 focus:ring-white">
+                                        <option selected>B1 Intermediate</option>
+                                        <option>A1 Beginner</option>
+                                        <option>A2 Elementary</option>
+                                        <option>B2 Upper Intermediate</option>
+                                        <option>C1 Advanced</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                                    <h3 class="font-medium mb-2">Tempo Diário</h3>
+                                    <select class="w-full bg-white/30 rounded-md px-3 py-2 text-white border border-white/20 focus:outline-none focus:ring-1 focus:ring-white">
+                                        <option selected>15-30 minutos</option>
+                                        <option>5-15 minutos</option>
+                                        <option>30-60 minutos</option>
+                                        <option>1+ horas</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                                    <h3 class="font-medium mb-2">Foco</h3>
+                                    <select class="w-full bg-white/30 rounded-md px-3 py-2 text-white border border-white/20 focus:outline-none focus:ring-1 focus:ring-white">
+                                        <option selected>Speaking</option>
+                                        <option>Listening</option>
+                                        <option>Grammar</option>
+                                        <option>Vocabulary</option>
+                                        <option>Travel</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex justify-center">
+                                <button class="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition flex items-center">
+                                    <i class="fas fa-route mr-2"></i> Gerar Minha Trilha
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Emotion Playlists -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <div class="p-6 border-b">
+                            <h2 class="text-xl font-bold">Playlists por Emoção</h2>
+                            <p class="text-gray-600 mt-1">Escolha conteúdos que combinam com seu estado de espírito</p>
+                        </div>
+                        
+                        <div class="emoji-tabs px-6 pt-3 flex space-x-4 overflow-x-auto pb-2">
+                            <input type="radio" name="emotion-tabs" id="happy-tab" checked class="hidden">
+                            <label for="happy-tab" class="cursor-pointer px-3 py-2 font-medium whitespace-nowrap">
+                                <i class="fas fa-laugh-beam text-yellow-400 mr-1"></i> Feliz
+                            </label>
+                            
+                            <input type="radio" name="emotion-tabs" id="relax-tab" class="hidden">
+                            <label for="relax-tab" class="cursor-pointer px-3 py-2 font-medium whitespace-nowrap">
+                                <i class="fas fa-spa text-teal-400 mr-1"></i> Relax
+                            </label>
+                            
+                            <input type="radio" name="emotion-tabs" id="sad-tab" class="hidden">
+                            <label for="sad-tab" class="cursor-pointer px-3 py-2 font-medium whitespace-nowrap">
+                                <i class="fas fa-sad-tear text-blue-400 mr-1"></i> Triste
+                            </label>
+                            
+                            <input type="radio" name="emotion-tabs" id="motivation-tab" class="hidden">
+                            <label for="motivation-tab" class="cursor-pointer px-3 py-2 font-medium whitespace-nowrap">
+                                <i class="fas fa-fire text-orange-400 mr-1"></i> Motivação
+                            </label>
+                        </div>
+                        
+                        <div class="px-6 pb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- Default happy content -->
+                            <div class="col-span-3">
+                                <div id="happy-content" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <!-- Happy playlist items -->
+                                    <div class="bg-gray-50 rounded-lg overflow-hidden">
+                                        <div class="relative h-32">
+                                            <img src="https://placehold.co/600x400?text=Happy+English" alt="Aulas de inglês divertidas" class="w-full h-full object-cover">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+                                                <span class="text-white font-medium">Pop Hits</span>
+                                            </div>
+                                            <div class="absolute top-2 right-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                                <i class="fas fa-play text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="flex justify-between items-start">
+                                                <div>
+                                                    <h4 class="font-medium">Upbeat Essentials</h4>
+                                                    <p class="text-xs text-gray-500">15 músicas • 45 min</p>
+                                                </div>
+                                                <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">B1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-lg overflow-hidden">
+                                        <div class="relative h-32">
+                                            <img src="https://placehold.co/600x400?text=Listening+Practice" alt="Podcast para prática de listening" class="w-full h-full object-cover">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+                                                <span class="text-white font-medium">Happy Hour Podcast</span>
+                                            </div>
+                                            <div class="absolute top-2 right-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                                <i class="fas fa-headphones text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="flex justify-between items-start">
+                                                <div>
+                                                    <h4 class="font-medium">Positive News Stories</h4>
+                                                    <p class="text-xs text-gray-500">Episódio #132 • 22 min</p>
+                                                </div>
+                                                <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">B2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gray-50 rounded-lg overflow-hidden">
+                                        <div class="relative h-32">
+                                            <img src="https://placehold.co/600x400?text=Quick+Tips" alt="Dicas rápidas em vídeo" class="w-full h-full object-cover">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+                                                <span class="text-white font-medium">Daily Smiles</span>
+                                            </div>
+                                            <div class="absolute top-2 right-2 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                                <i class="fab fa-tiktok text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="flex justify-between items-start">
+                                                <div>
+                                                    <h4 class="font-medium">Quick Happy Boost</h4>
+                                                    <p class="text-xs text-gray-500">10 vídeos • 5 min</p>
+                                                </div>
+                                                <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">A2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Community Wall -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <div class="p-6 border-b">
+                            <div class="flex justify-between items-center">
+                                <h2 class="text-xl font-bold">Mural da Comunidade</h2>
+                                <button class="bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition">
+                                    <i class="fas fa-plus mr-1"></i> Nova Postagem
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="divide-y">
+                            <!-- Post 1 -->
+                            <div class="p-6">
+                                <div class="flex items-start space-x-3 mb-3">
+                                    <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Ana S.</h4>
+                                        <p class="text-xs text-gray-500">2 horas atrás</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-3">"Aprendendo inglês de forma divertida e eficaz!" 🚀</p>
+                                <div class="flex space-x-2">
+                                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Objetivo</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Post 2 -->
+                            <div class="p-6">
+                                <div class="flex items-start space-x-3 mb-3">
+                                    <div class="bg-pink-100 text-pink-600 rounded-full w-10 h-10 flex items-center justify-center">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Carlos R.</h4>
+                                        <p class="text-xs text-gray-500">5 horas atrás</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-3">Concluí 3 desafios hoje! Aprendi 10 palavras novas e gravei meu primeiro audio em inglês! 🎤</p>
+                                <div class="flex space-x-2">
+                                    <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Progresso</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Post 3 -->
+                            <div class="p-6">
+                                <div class="flex items-start space-x-3 mb-3">
+                                    <div class="bg-purple-100 text-purple-600 rounded-full w-10 h-10 flex items-center justify-center">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Julia M.</h4>
+                                        <p class="text-xs text-gray-500">Ontem</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-3">Minha meta é conseguir assistir filmes sem legenda até o final do ano!</p>
+                                <div class="flex space-x-2">
+                                    <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Meta</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Study Generator -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <div class="p-6 border-b">
+                            <h2 class="text-xl font-bold">Gerador de Estudo Rápido</h2>
+                            <p class="text-gray-600 mt-1">"Me salva hoje!" — gere um plano rápido com base no seu tempo e energia</p>
+                        </div>
+                        
+                        <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-purple-50 rounded-lg p-4">
+                                <h3 class="font-medium mb-2">Tempo Disponível</h3>
+                                <select class="w-full bg-white rounded-md px-3 py-2 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-purple-500">
+                                    <option selected>Só 5 minutos</option>
+                                    <option>15 minutos</option>
+                                    <option>30 minutos</option>
+                                    <option>1 hora</option>
+                                </select>
+                            </div>
+                            
+                            <div class="bg-purple-50 rounded-lg p-4">
+                                <h3 class="font-medium mb-2">Sua Energia</h3>
+                                <select class="w-full bg-white rounded-md px-3 py-2 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-purple-500">
+                                    <option selected>Tô cansado(a)</option>
+                                    <option>Tô normal</option>
+                                    <option>Tô motivado(a)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="bg-purple-50 rounded-lg p-4">
+                                <h3 class="font-medium mb-2">Habilidade</h3>
+                                <select class="w-full bg-white rounded-md px-3 py-2 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-purple-500">
+                                    <option selected>Todas</option>
+                                    <option>Listening</option>
+                                    <option>Speaking</option>
+                                    <option>Reading</option>
+                                    <option>Writing</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="px-6 pb-6">
+                            <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-bold hover:bg-purple-700 transition">
+                                <i class="fas fa-magic mr-2"></i> Gerar Meu Plano de Estudo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Daily Challenge Modal (hidden by default) -->
+        <div id="challengeModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+            <div class="bg-white rounded-xl max-w-md w-full p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-bold text-lg">Desafio VIBE - O que vai marcar hoje?</h3>
+                    <button onclick="document.getElementById('challengeModal').classList.add('hidden')" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="bg-yellow-100 text-yellow-800 p-3 rounded-lg flex items-start mb-3">
+                        <i class="fas fa-trophy mr-2 mt-1 text-yellow-500"></i>
+                        <div>
+                            <p class="font-medium">Complete 3 exercícios de listening hoje e ganhe o selo <span class="font-bold">"Listening Ninja"</span></p>
+                            <p class="text-sm mt-1">Você já completou 1/3</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="challenge1" class="mr-2 h-5 w-5 text-purple-600 rounded focus:ring-purple-500">
+                            <label for="challenge1" class="text-gray-700">Assista a 1 dica rápida no TikTok/Youtube de até 5 min</label>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <input type="checkbox" id="challenge2" class="mr-2 h-5 w-5 text-purple-600 rounded focus:ring-purple-500">
+                            <label for="challenge2" class="text-gray-700">Escute um podcast e responda: Qual é o tópico principal?</label>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <input type="checkbox" id="challenge3" class="mr-2 h-5 w-5 text-purple-600 rounded focus:ring-purple-500">
+                            <label for="challenge3" class="text-gray-700">Ouça uma música e note pelo menos 2 palavras novas</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-end space-x-3">
+                    <button class="px-4 py-2 text-gray-600 font-medium hover:text-gray-800">
+                        Pular
+                    </button>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700">
+                        Aceitar Desafio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simulate progress ring animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const circle = document.querySelector('.progress-ring__circle');
+            const radius = circle.r.baseVal.value;
+            const circumference = radius * 2 * Math.PI;
+            
+            circle.style.strokeDasharray = circumference;
+            circle.style.strokeDashoffset = circumference;
+            
+            // Animate progress (60%)
+            const offset = circumference - (60/100) * circumference;
+            setTimeout(() => {
+                circle.style.strokeDashoffset = offset;
+            }, 100);
+            
+            // Show challenge modal after 5 seconds (for demo)
+            setTimeout(() => {
+                document.getElementById('challengeModal').classList.remove('hidden');
+            }, 5000);
+        });
+        
+        // Collapsible functionality
+        document.querySelectorAll('[data-collapse-toggle]').forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-collapse-toggle');
+                const target = document.getElementById(targetId);
+                
+                if (target.classList.contains('hidden')) {
+                    target.classList.remove('hidden');
+                } else {
+                    target.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Emotion tab switching
+        document.querySelectorAll('[name="emotion-tabs"]').forEach(tab => {
+            tab.addEventListener('change', () => {
+                // In a real app, this would load different content for each tab
+                console.log(`Selected ${tab.id}`);
+            });
+        });
+    </script>
+</body>
+</html> </h1>
+</body>
+</html>
